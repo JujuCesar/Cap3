@@ -1,0 +1,16 @@
+# Criando lojas
+loja1 = {'Iphone 15', 'Iphone 16', 'Moto e32', 'Moto g24', 'Redmi Note 12'}
+loja2 = {'Iphone 14','Iphone 15', 'Iphone 16', 'Moto e32','Redmi Note 13'}
+
+# Mostrando modelos da loja 1
+print(loja1)
+
+# Mostrando modelos da loja 2
+print(loja2)
+
+# Mostrando o total de modelos em ambas as lojas
+print(loja1 | loja2)
+
+# Mostrando modelos disponiveis em ambas as lojas
+print(loja1 & loja2)
+
