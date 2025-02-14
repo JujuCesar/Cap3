@@ -1,0 +1,11 @@
+# Criando o dicionário vazio para ser inserido um novo aluno
+aluno = {}
+
+# Adicionando aluno
+aluno['Nome'] = input("Digite o nome do aluno:\n").strip()
+aluno['Média'] = float(input("Digite a média do aluno:\n").strip())
+aluno['Situação'] = "AP" if aluno["Média"] >= 50 else "RP"
+
+# Mostrando as informações do dicionário
+print(f"Dados do aluno:\n")
+print(aluno)
