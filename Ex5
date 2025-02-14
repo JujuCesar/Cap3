@@ -1,0 +1,34 @@
+# Criando lista de pessoas
+pessoa = []
+
+# Inserindo o numero de pessoas a serem cadastradas
+n = int(input("Entre com o numero de pessoas a serem cadastradas\n"))
+
+# Variáveis para calculos
+somaIdade = 0
+mulhereMenorVinte = 0
+
+# Loop para cadastrar pessoas
+for i in range(n):
+    print(f"Cadastrando a {i + 1}° pessoa:\n")
+    nome = input("Entre com o nome:\n").strip()
+    idade = int(input("Entre com a idade da pessoa:\n"))
+    sexo = input("Entre com o sexo da pessoa:\n").strip()
+
+    # Adicionando a pessoa à lista
+    pessoa.append({"Nome":nome,"Idade":idade,"Sexo":sexo})
+
+    # Atualizando as idades
+    somaIdade += idade
+
+    # Atualizando mulheres com menos de 20 anos
+    if sexo == "F" and idade < 20:
+        mulhereMenorVinte += 1
+
+# Calculando a média da idade do grupo
+mediaIdade = somaIdade / n
+
+# Saída de dados
+print("-Resultados-\n")
+print(f"A média das idades é de {mediaIdade} anos")
+print(f"A quantidade de mulheres com menos de 20 anos: {mulhereMenorVinte}")
