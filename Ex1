@@ -1,0 +1,19 @@
+# Criação de times
+times = ['Flamengo', 'Corinthians', 'Cruzeiro', 'Internacional', 'Barcelona']
+
+# Os 3 primeiros
+print(times[:3])
+
+# Os 2 ultimos
+print(times[3:])
+
+# Ordem alfabética
+print(sorted(times))
+
+# Onde está o time Barcelona
+if 'Barcelona' in times:
+    posicao = times.index() + 1 # +1 para nao mostrar o indice da lista e sim a pocição do time
+    print(f"O Barcelona está na posição {posicao}")
+
+else:
+    print("Não há o time Barcelona no campeonato.")
