@@ -1,0 +1,16 @@
+# Criando lista de pessoa
+pessoa = []
+
+# Criando pessoas
+for i in range(3):
+    nome = input(f"Entre com o nome da pessoa {i + 1}\n")
+    peso = float(input(f"Entre com o peso da pessoa {i + 1}\n"))
+    pessoa.append((nome,peso)) # Adiciona o nome e pessoa em para cada pessoa
+
+# Processando dados
+maisPesada = max(pessoa, key=lambda x:x[1]) # a função key=lambda x:x[1] mostra ao max oque deve ser pego, no caso, o peso
+maisLeve = min(pessoa, key=lambda x:x[1])
+
+# Saída de dados
+print(f"Pessoa mais pesada: {maisPesada[0]} com {maisPesada[1]} Kg.")
+print(f"Pessoa mais leva: {maisLeve[0]} com {maisLeve[1]} Kg.")
